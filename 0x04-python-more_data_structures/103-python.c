@@ -36,3 +36,14 @@ void print_python_list(PyObject *p)
  */
 void print_python_bytes(PyObject *p)
 {
+	unsigned char i, size;
+	PyBytesObject *bytes = (PyBytesObject *)p;
+
+	printf("[.] bytes object info \n");
+	if (strcmp(p->ob_type->tp_name, "bytes")!= 0)
+	{
+		printf("  [ERROR] Invalid Bytes Object\n");
+		return;
+	}
+
+
