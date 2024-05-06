@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Square module."""
 
+
 class Square:
     """Define a square."""
 
@@ -24,6 +25,6 @@ class Square:
         """Area of this square.
 
         Returns:
-            This size squared.
+            The size squared.
         """
-        return self.size ** 2
+        return self.__size ** 2
