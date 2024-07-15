@@ -68,7 +68,7 @@ class SinglyLinkedList:
 
     def __str__(self):
         """Define the print() representation of a SinglyLinkedList."""
-        value = []
+        values = []
         tmp = self.__head
         while tmp is not None:
             values.append(str(tmp.data))
