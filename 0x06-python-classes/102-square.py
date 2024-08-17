@@ -26,6 +26,8 @@ class Square:
     @size.setter
     def size(self, value):
         if not isinstance(value, int):
+            raise TypeError('size must be an integr')
+        if value < 0:
             raise TypeError('size must be >= 0')
         self.__size = value
 
