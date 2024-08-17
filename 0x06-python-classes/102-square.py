@@ -30,7 +30,7 @@ class Square:
         self.__size = value
 
     def area(self):
-        """Args of this square.
+        """Area of this square.
 
         Returns:
             The size squared.
